@@ -47,8 +47,8 @@
 	<section id="about">
 		<h2>About Me</h2>
 		<p>
-			I am a computer science graduate with experience building Java,
-			Svelte, Rust, Godot, and database-driven applications.
+			Computer Science graduate focused on Java desktop applications, full-stack web development, and automation tools. 
+			I enjoy building software that solves real-world problems and creating projects that demonstrate practical engineering skills.
 		</p>
 	</section>
 
