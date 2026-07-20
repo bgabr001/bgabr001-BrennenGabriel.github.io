@@ -1,7 +1,0 @@
-Rename your resume PDF to:
-
-Brennen-Gabriel-Resume.pdf
-
-Then place it in this folder:
-
-static/resume/Brennen-Gabriel-Resume.pdf
