@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';;
 </script>
 
 <svelte:head>
@@ -33,8 +33,8 @@
 			</p>
 
 			<div class="button-row">
-				<a class="button primary" href={`${base}/projects`}>See My Work</a>
-				<a class="button secondary" href={`${base}/resume`}>View Resume</a>
+				<a class="button primary" href={resolve('/projects')}>See My Work</a>
+				<a class="button secondary" href={resolve('/resume')}>View Resume</a>
 			</div>
 		</div>
 
