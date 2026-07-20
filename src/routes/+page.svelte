@@ -1,193 +1,143 @@
+<script lang="ts">
+	import { resolve } from '$app/paths';
+	
+	const codeExample = `developer = {
+	name: "Brennen Gabriel",
+	specialty: "Java & Web",
+	building: "Useful software",
+	status: "Open to opportunities"
+};`;
+</script>
+
 <svelte:head>
 	<title>Brennen Gabriel | Software Developer</title>
 	<meta
 		name="description"
-		content="Portfolio website for Brennen Gabriel, a software developer."
+		content="Brennen Gabriel's software development portfolio featuring Java applications, web development, automation tools, and educational games."
 	/>
 </svelte:head>
 
-<script lang="ts">
-	const projects = [
-		{
-			name: 'RMA Tracker',
-			description: 'A Java Swing and SQLite desktop application for managing RMAs.'
-		},
-		{
-			name: 'Rogue-Like Algebra',
-			description: 'An educational roguelike game that teaches algebra through combat.'
-		},
-		{
-			name: 'Setting Scheduler',
-			description: 'A Java application that converts Excel schedules into calendar files.'
-		}
-	];
-</script>
+<section class="hero">
+	<div class="page-shell hero-grid">
+		<div class="hero-copy">
+			<p class="eyebrow">Software Developer · Problem Solver · Builder</p>
 
-<header>
-	<nav>
-		<a href="#home">Home</a>
-		<a href="#about">About</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact</a>
-	</nav>
-</header>
+			<h1>Building practical software that solves real problems.</h1>
 
-<main>
-	<section id="home" class="hero">
-		<p class="eyebrow">Software Developer</p>
-		<h1>Brennen Gabriel</h1>
-		<p>
-			I build practical desktop applications, websites, developer tools,
-			and educational games.
-		</p>
+			<p class="hero-text">
+				I am Brennen Gabriel, a computer science graduate and software developer focused on
+				Java applications, desktop tools, web development, and educational games.
+			</p>
 
-		<a class="button" href="#projects">View my projects</a>
-	</section>
+			<div class="button-row">
+				<a class="button primary" href={resolve('/projects')}>
+					View My Projects
+				</a>
 
-	<section id="about">
-		<h2>About Me</h2>
-		<p>
-			Computer Science graduate focused on Java desktop applications, full-stack web development, and automation tools. 
-			I enjoy building software that solves real-world problems and creating projects that demonstrate practical engineering skills.
-		</p>
-	</section>
-
-	<section id="projects">
-		<h2>Projects</h2>
-
-		<div class="project-grid">
-			{#each projects as project}
-				<article>
-					<h3>{project.name}</h3>
-					<p>{project.description}</p>
-				</article>
-			{/each}
+				<a class="button secondary" href={resolve('/contact')}>
+					Contact Me
+				</a>
+			</div>
 		</div>
-	</section>
 
-	<section id="contact">
-		<h2>Contact</h2>
-		<p>
-			Visit my
-			<a href="https://github.com/bgabr001">GitHub profile</a>.
-		</p>
-	</section>
-</main>
+		<div class="hero-card">
+			<div class="code-window">
+				<div class="window-dots" aria-hidden="true">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 
-<footer>
-	<p>© {new Date().getFullYear()} Brennen Gabriel</p>
-</footer>
+				<pre><code><span class="code-muted">// Current focus</span>
+{codeExample}</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
 
-<style>
-	:global(*) {
-		box-sizing: border-box;
-	}
+<section class="section">
+	<div class="page-shell">
+		<div class="section-heading">
+			<p class="eyebrow">Featured Work</p>
 
-	:global(html) {
-		scroll-behavior: smooth;
-	}
+			<h2>Projects with a real purpose</h2>
 
-	:global(body) {
-		margin: 0;
-		background: #0f172a;
-		color: #e2e8f0;
-		font-family:
-			Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-			sans-serif;
-		line-height: 1.6;
-	}
+			<p>
+				Selected applications that demonstrate software design, problem-solving, and
+				usability.
+			</p>
+		</div>
 
-	header {
-		position: sticky;
-		top: 0;
-		background: rgb(15 23 42 / 90%);
-		backdrop-filter: blur(12px);
-		border-bottom: 1px solid #1e293b;
-	}
+		<div class="card-grid three">
+			<article class="project-card featured">
+				<span class="project-tag">Java Desktop Application</span>
 
-	nav {
-		display: flex;
-		justify-content: flex-end;
-		gap: 1.5rem;
-		max-width: 1100px;
-		margin: auto;
-		padding: 1rem 1.5rem;
-	}
+				<h3>RMA Tracker</h3>
 
-	a {
-		color: #7dd3fc;
-		text-decoration: none;
-	}
+				<p>
+					A complete return-material authorization tracking system with reports, exports,
+					backups, search, status history, and packaged desktop releases.
+				</p>
 
-	a:hover {
-		color: white;
-	}
+				<a class="text-link" href={resolve('/projects')}/#rma-tracker>
+					Explore project →
+				</a>
+			</article>
 
-	main {
-		max-width: 1100px;
-		margin: auto;
-		padding: 0 1.5rem;
-	}
+			<article class="project-card">
+				<span class="project-tag">Godot · Rust</span>
 
-	section {
-		padding: 5rem 0;
-	}
+				<h3>Rogue-Like Algebra</h3>
 
-	.hero {
-		min-height: 80vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-	}
+				<p>
+					An educational rogue-like game that combines turn-based combat with adaptive
+					algebra challenges for middle and high school students.
+				</p>
 
-	.eyebrow {
-		color: #38bdf8;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.15em;
-	}
+				<a class="text-link" href={resolve('/projects')}/#rogue-like-algebra>
+					Explore project →
+				</a>
+			</article>
 
-	h1 {
-		margin: 0;
-		font-size: clamp(3rem, 10vw, 6rem);
-		line-height: 1;
-	}
+			<article class="project-card">
+				<span class="project-tag">Java · Apache POI</span>
 
-	h2 {
-		font-size: 2rem;
-	}
+				<h3>Automation Tools</h3>
 
-	.button {
-		display: inline-block;
-		margin-top: 1rem;
-		padding: 0.8rem 1.25rem;
-		background: #0284c7;
-		color: white;
-		border-radius: 0.5rem;
-		font-weight: 700;
-	}
+				<p>
+					Business utilities for scheduling, machine labels, county totals, and other
+					repetitive workflows.
+				</p>
 
-	.project-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		gap: 1rem;
-	}
+				<a class="text-link" href={resolve('/projects')}/#automation-tools>
+					Explore project →
+				</a>
+			</article>
+		</div>
+	</div>
+</section>
 
-	article {
-		padding: 1.5rem;
-		background: #1e293b;
-		border: 1px solid #334155;
-		border-radius: 0.75rem;
-	}
+<section class="section section-alt">
+	<div class="page-shell stats-grid">
+		<div>
+			<p class="eyebrow">What I Work With</p>
 
-	article h3 {
-		margin-top: 0;
-	}
+			<h2>A practical, full-project skill set</h2>
+		</div>
 
-	footer {
-		padding: 2rem;
-		text-align: center;
-		border-top: 1px solid #1e293b;
-	}
-</style>
+		<div class="stat-card">
+			<strong>Java</strong>
+			<span>Desktop applications, Gradle, SQLite, testing</span>
+		</div>
+
+		<div class="stat-card">
+			<strong>Web</strong>
+			<span>SvelteKit, HTML, CSS, JavaScript, GitHub Pages</span>
+		</div>
+
+		<div class="stat-card">
+			<strong>Games</strong>
+			<span>Godot, Rust, Unity, C#</span>
+		</div>
+	</div>
+</section>
