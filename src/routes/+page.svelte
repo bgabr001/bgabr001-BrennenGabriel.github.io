@@ -98,6 +98,23 @@
 					Explore project →
 				</a>
 			</article>
+
+			<article class="project-card">
+				<span class="project-tag">
+					SvelteKit • TypeScript • Tailwind CSS
+				</span>
+
+				<h3>Portfolio Website</h3>
+
+				<p>
+					A responsive portfolio website showcasing my software projects,
+					professional experience, resume, and technical skills.
+				</p>
+
+				<a class="text-link" href={resolve('/projects')}/#portfolio-website>
+					Explore project →
+				</a>
+			</article>
 		</div>
 	</div>
 </section>
