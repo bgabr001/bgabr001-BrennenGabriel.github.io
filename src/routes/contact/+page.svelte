@@ -23,22 +23,25 @@
 			</div>
 		</a>
 
-		<div class="contact-card">
-			<span class="contact-icon">@</span>
-			<div>
-				<h2>Email</h2>
-				<p>Replace this text with your professional email address.</p>
-				<strong>your-email@example.com</strong>
-			</div>
-		</div>
+		<a class="contact-card" href="mailto:brennen.gabriel@gmail.com">
+	<span class="contact-icon">@</span>
+	<div>
+		<h2>Email</h2>
+		<p>brennen.gabriel@gmail.com</p>
+		<strong>brennen.gabriel@gmail.com →</strong>
+	</div>
+</a>
 
 		<div class="contact-card">
 			<span class="contact-icon">in</span>
+			<a class="contact-card" href="https://www.linkedin.com/in/brennen-gabriel/" target="_blank" rel="noreferrer">
+			<span class="contact-icon">&lt;/&gt;</span>
 			<div>
 				<h2>LinkedIn</h2>
-				<p>Add your LinkedIn profile URL when ready.</p>
-				<strong>linkedin.com/in/your-profile</strong>
+				<p>View your LinkedIn profile</p>
+				<strong>linkedin.com/in/brennen-gabriel→</strong>
 			</div>
+		</a>
 		</div>
 	</div>
 </section>
