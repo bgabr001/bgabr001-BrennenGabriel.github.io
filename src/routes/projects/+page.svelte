@@ -39,7 +39,7 @@
 		</article>
 
 		<article class="project-detail" id="automation-tools">
-			<div class="project-number">03</div>
+			<div class="project-number">02</div>
 			<div>
 				<div class="project-meta">
 					<span>Java</span><span>Apache POI</span><span>PDF</span><span>iCalendar</span>
@@ -71,7 +71,7 @@
 		</article>
 
 		<article class="project-detail">
-			<div class="project-number">04</div>
+			<div class="project-number">03</div>
 			<div>
 				<div class="project-meta">
 					<span>SvelteKit</span><span>CSS</span><span>GitHub Pages</span>
