@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 
 	const features = [
 		'Create, edit, search, and manage RMA records',
@@ -22,6 +22,14 @@
 		'PDF reporting',
 		'jpackage'
 	];
+
+	const documentationLibrary = asset(
+		'/documents/rmaTracker/RMA_Tracker_Documentation_Outline_Volumes_I-IV.pdf'
+	);
+
+	const volumeOne = asset(
+		'/documents/rmaTracker/SRS_Documentation_v2.1.1.pdf'
+	);
 </script>
 
 <svelte:head>
@@ -181,6 +189,145 @@
 		</p>
 	</section>
 
+	<section class="content-section">
+	<p class="section-label">Documentation</p>
+	<h2>Engineering documentation</h2>
+
+	<p>
+		RMA Tracker includes a professional documentation library covering
+		software requirements, architecture, user guidance, installation,
+		deployment, and long-term maintenance.
+	</p>
+
+	<div class="documentation-grid">
+		<article class="documentation-card">
+			<div class="document-heading">
+				<span class="document-volume">Overview</span>
+				<span class="document-status available">Available</span>
+			</div>
+
+			<h3>RMA Tracker Documentation Library</h3>
+
+			<p>
+				An overview of the complete four-volume documentation set,
+				including the purpose, scope, planned content, and estimated
+				length of each volume.
+			</p>
+
+			<div class="document-meta">
+				<span>PDF</span>
+				<span>Four volumes</span>
+				<span>Documentation roadmap</span>
+			</div>
+
+			<div class="document-actions">
+				<a
+					class="primary-button"
+					href={documentationLibrary}
+					target="_blank"
+					rel="noreferrer"
+				>
+					View PDF
+				</a>
+
+				<a
+					class="secondary-button"
+					href={documentationLibrary}
+					download
+				>
+					Download PDF
+				</a>
+			</div>
+		</article>
+
+		<article class="documentation-card featured-document">
+			<div class="document-heading">
+				<span class="document-volume">Volume I</span>
+				<span class="document-status available">Available</span>
+			</div>
+
+			<h3>Software Requirements Specification</h3>
+
+			<p>
+				Defines the functional and nonfunctional requirements,
+				external interfaces, data requirements, business rules,
+				use cases, acceptance criteria, and future enhancements for
+				RMA Tracker Version 2.1.1.
+			</p>
+
+			<div class="document-meta">
+				<span>PDF</span>
+				<span>50 pages</span>
+				<span>Version 2.1.1</span>
+			</div>
+
+			<div class="document-actions">
+				<a
+					class="primary-button"
+					href={volumeOne}
+					target="_blank"
+					rel="noreferrer"
+				>
+					View PDF
+				</a>
+
+				<a
+					class="secondary-button"
+					href={volumeOne}
+					download
+				>
+					Download PDF
+				</a>
+			</div>
+		</article>
+
+		<article class="documentation-card planned-document">
+			<div class="document-heading">
+				<span class="document-volume">Volume II</span>
+				<span class="document-status">In progress</span>
+			</div>
+
+			<h3>Technical Design & Architecture Manual</h3>
+
+			<p>
+				Documents the application architecture, project structure,
+				database design, class organization, reporting system,
+				backup system, packaging, and testing strategy.
+			</p>
+		</article>
+
+		<article class="documentation-card planned-document">
+			<div class="document-heading">
+				<span class="document-volume">Volume III</span>
+				<span class="document-status">Planned</span>
+			</div>
+
+			<h3>User Manual & Administration Guide</h3>
+
+			<p>
+				Provides end-user and administrator instructions for creating
+				RMAs, managing repair items, searching, reporting, exporting,
+				backing up, restoring, and troubleshooting.
+			</p>
+		</article>
+
+		<article class="documentation-card planned-document">
+			<div class="document-heading">
+				<span class="document-volume">Volume IV</span>
+				<span class="document-status">Planned</span>
+			</div>
+
+			<h3>Installation, Deployment & Maintenance Guide</h3>
+
+			<p>
+				Covers installation, building, packaging, distribution,
+				software updates, backup and recovery, maintenance, and
+				release procedures.
+			</p>
+		</article>
+	</div>
+</section>
+	
 	<section class="content-section">
 		<p class="section-label">Roadmap</p>
 		<h2>Future development</h2>
@@ -400,8 +547,109 @@
 		}
 
 		.card-grid,
-		.architecture-grid {
+		.architecture-grid,
+		.documentation-grid {
 			grid-template-columns: 1fr;
 		}
 	}
+
+
+	.documentation-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.documentation-card {
+	display: flex;
+	flex-direction: column;
+	padding: 1.75rem;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: var(--panel);
+	box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+}
+
+.featured-document {
+	border-color: rgba(101, 212, 255, 0.35);
+	background: linear-gradient(
+		145deg,
+		rgba(23, 55, 80, 0.9),
+		rgba(13, 27, 47, 0.9)
+	);
+}
+
+.document-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 1.25rem;
+}
+
+.document-volume {
+	color: var(--accent);
+	font-size: 0.8rem;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.document-status {
+	display: inline-flex;
+	padding: 0.35rem 0.65rem;
+	border: 1px solid var(--line);
+	border-radius: 999px;
+	color: var(--muted);
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.document-status.available {
+	border-color: rgba(101, 212, 255, 0.25);
+	background: rgba(101, 212, 255, 0.07);
+	color: var(--accent);
+}
+
+.documentation-card h3 {
+	margin: 0 0 0.85rem;
+	color: var(--text);
+	font-size: 1.35rem;
+}
+
+.documentation-card p {
+	margin: 0;
+	color: var(--muted);
+	line-height: 1.7;
+}
+
+.document-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 1.5rem;
+}
+
+.document-meta span {
+	padding: 0.35rem 0.65rem;
+	border: 1px solid rgba(101, 212, 255, 0.18);
+	border-radius: 999px;
+	background: rgba(101, 212, 255, 0.07);
+	color: var(--accent);
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.document-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-top: auto;
+	padding-top: 1.75rem;
+}
+
+.planned-document {
+	opacity: 0.72;
+}
 </style>
