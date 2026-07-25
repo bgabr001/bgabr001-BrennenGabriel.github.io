@@ -94,7 +94,7 @@
 					repetitive workflows.
 				</p>
 
-				<a class="text-link" href={resolve('/projects#automation-tools')}>
+				<a class="text-link" href={resolve('/projects#automation-tools')}> 
 					Explore project →
 				</a>
 			</article>

@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { resolve } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Projects | Brennen Gabriel</title>
 </svelte:head>
@@ -34,7 +38,9 @@
 					<li>Create automatic database backups</li>
 					<li>Package versioned macOS application releases</li>
 				</ul>
-				<p class="project-note">Add screenshots, documentation links, and downloads here later.</p>
+				<a class="text-link" href={resolve('/projects/rma-tracker')}>
+					View RMA Tracker →
+				</a>
 			</div>
 		</article>
 
