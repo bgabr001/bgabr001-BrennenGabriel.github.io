@@ -79,7 +79,7 @@
 					backups, search, status history, and packaged desktop releases.
 				</p>
 
-				<a class="text-link" href={resolve('/projects')}/#rma-tracker>
+				<a class="text-link" href={resolve('/projects#rma-tracker')}>
 					Explore project →
 				</a>
 			</article>
@@ -94,7 +94,7 @@
 					repetitive workflows.
 				</p>
 
-				<a class="text-link" href={resolve('/projects')}/#automation-tools>
+				<a class="text-link" href={resolve('/projects#automation-tools')}>
 					Explore project →
 				</a>
 			</article>
@@ -111,7 +111,7 @@
 					professional experience, resume, and technical skills.
 				</p>
 
-				<a class="text-link" href={resolve('/projects')}/#portfolio-website>
+				<a class="text-link" href={resolve('/projects#portfolio-website')}>
 					Explore project →
 				</a>
 			</article>
