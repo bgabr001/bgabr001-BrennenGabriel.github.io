@@ -46,35 +46,47 @@
 
 		<article class="project-detail" id="automation-tools">
 			<div class="project-number">02</div>
-			<div>
-				<div class="project-meta">
-					<span>Java</span><span>Apache POI</span><span>PDF</span><span>iCalendar</span>
+		<div>
+			<div class="project-meta">
+				<span>Java</span><span>Apache POI</span><span>PDF</span><span>iCalendar</span>
+			</div>
+
+			<h2>Business Automation Tools</h2>
+
+			<p>
+				A collection of Java applications developed to automate repetitive business workflows,
+				reduce manual effort, and improve operational efficiency. Each tool was created to solve
+				real-world business challenges through automation and data processing.
+			</p>
+
+			<div class="mini-project-grid">
+				<div>
+					<h3>Setting Scheduler</h3>
+					<p>
+						Reads Excel schedules and automatically generates individual iCalendar (.ics) files
+						for employees, eliminating manual calendar creation.
+					</p>
 				</div>
-				<h2>Business Automation Tools</h2>
-				<p>
-					A group of Java utilities that replace repetitive manual processes with repeatable,
-					consistent workflows.
-				</p>
-				<div class="mini-project-grid">
-					<div>
-						<h3>Setting Scheduler</h3>
-						<p>Reads Excel schedules and creates individual iCalendar files.</p>
-					</div>
-					<div>
-						<h3>Machine Label Generator</h3>
-						<p>Creates organized, print-ready PDF labels from election planning data.</p>
-					</div>
-					<div>
-						<h3>County Setting Totals</h3>
-						<p>Processes county spreadsheets and generates a consolidated totals workbook.</p>
-					</div>
-					<div>
-						<h3>Machine Billing Count</h3>
-						<p>Calculates machine counts for business reporting and billing workflows.</p>
-					</div>
+
+				<div>
+					<h3>Machine Label Generator</h3>
+					<p>
+						Generates organized, print-ready PDF labels for election equipment using county
+						planning data, improving deployment accuracy and consistency.
+					</p>
+				</div>
+
+				<div>
+					<h3>Billing &amp; County Reporting</h3>
+					<p>
+						Processes county inventory spreadsheets to calculate billable machine totals,
+						aggregate county statistics, and generate formatted reports used for billing and
+						operational planning.
+					</p>
 				</div>
 			</div>
-		</article>
+		</div>
+	</article>
 
 		<article class="project-detail" id="portfolio-website">
 			<div class="project-number">03</div>
