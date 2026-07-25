@@ -56,7 +56,7 @@
 
 			<a
 				class="secondary-button"
-				href="https://github.com/bgabr001"
+				href="https://github.com/bgabr001/RMATracker"
 				target="_blank"
 				rel="noreferrer"
 			>
