@@ -85,21 +85,6 @@
 			</article>
 
 			<article class="project-card">
-				<span class="project-tag">Godot · Rust</span>
-
-				<h3>Rogue-Like Algebra</h3>
-
-				<p>
-					An educational rogue-like game that combines turn-based combat with adaptive
-					algebra challenges for middle and high school students.
-				</p>
-
-				<a class="text-link" href={resolve('/projects')}/#rogue-like-algebra>
-					Explore project →
-				</a>
-			</article>
-
-			<article class="project-card">
 				<span class="project-tag">Java · Apache POI</span>
 
 				<h3>Automation Tools</h3>
