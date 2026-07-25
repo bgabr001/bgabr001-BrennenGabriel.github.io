@@ -38,28 +38,6 @@
 			</div>
 		</article>
 
-		<article class="project-detail" id="rogue-like-algebra">
-			<div class="project-number">02</div>
-			<div>
-				<div class="project-meta">
-					<span>Godot</span><span>Rust</span><span>Game Design</span>
-				</div>
-				<h2>Rogue-Like Algebra</h2>
-				<p>
-					An educational turn-based rogue-like designed to help students practice algebra.
-					Players answer generated math questions during combat, with difficulty and challenge
-					types changing as they progress.
-				</p>
-				<ul class="feature-list">
-					<li>Procedurally generated algebra questions</li>
-					<li>Linear, quadratic, and inequality problem types</li>
-					<li>Turn-based combat and enemy behavior</li>
-					<li>Difficulty levels and non-repeating questions</li>
-					<li>Godot game interface powered by Rust modules</li>
-				</ul>
-			</div>
-		</article>
-
 		<article class="project-detail" id="automation-tools">
 			<div class="project-number">03</div>
 			<div>
