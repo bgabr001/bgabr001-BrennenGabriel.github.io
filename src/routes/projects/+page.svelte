@@ -22,7 +22,7 @@
 			<div class="project-number">01</div>
 			<div>
 				<div class="project-meta">
-					<span>Java</span><span>Swing</span><span>SQLite</span><span>Gradle</span>
+					<span>Java</span><span>JavaSwing</span><span>SQLite</span><span>Gradle</span>
 				</div>
 				<h2>RMA Tracker</h2>
 				<p>

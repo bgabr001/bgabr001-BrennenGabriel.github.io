@@ -2,6 +2,7 @@
 	import '../app.css';
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
+	import favicon from '$lib/assets/favicon.svg';
 
 	const links = [
 		{ label: 'Home', href: `${base}/` },
@@ -21,6 +22,7 @@
 </script>
 
 <svelte:head>
+	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<meta
 		name="description"
 		content="The software development portfolio of Brennen Gabriel."
