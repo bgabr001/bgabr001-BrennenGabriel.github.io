@@ -62,14 +62,6 @@
 				</div>
 
 				<div class="resume-entry">
-					<h3>Rogue-Like Algebra</h3>
-					<p>
-						Educational roguelike game built with Godot and Rust to teach
-						algebra through gameplay.
-					</p>
-				</div>
-
-				<div class="resume-entry">
 					<h3>Business Automation Tools</h3>
 					<p>
 						Collection of Java utilities including scheduling,
