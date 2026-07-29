@@ -30,6 +30,10 @@
 	const volumeOne = asset(
 		'/documents/rmaTracker/SRS_Documentation_v2.1.1.pdf'
 	);
+
+	const volumeTwo = asset(
+		'/documents/rmaTracker/Technical_Design_and_Architecture_Manual_v2.1.1.pdf'
+	);
 </script>
 
 <svelte:head>
@@ -281,19 +285,41 @@
 			</div>
 		</article>
 
-		<article class="documentation-card planned-document">
+		<article class="documentation-card featured-document">
 			<div class="document-heading">
 				<span class="document-volume">Volume II</span>
-				<span class="document-status">In progress</span>
+				<span class="document-status available">Available</span>
 			</div>
 
 			<h3>Technical Design & Architecture Manual</h3>
 
 			<p>
-				Documents the application architecture, project structure,
-				database design, class organization, reporting system,
-				backup system, packaging, and testing strategy.
+				Provides a comprehensive technical reference for the application
+				architecture, project structure, technology stack, database design,
+				class organization, user interface, reporting system, backup and
+				recovery, packaging, testing, security, reliability, performance,
+				and future architecture of RMA Tracker Version 2.1.1.
 			</p>
+
+			<div class="document-actions">
+				<a
+					class="primary-button"
+					href={volumeTwo}
+					target="_blank"
+					rel="noreferrer"
+				>
+					View PDF
+				</a>
+
+				<a
+					class="secondary-button"
+					href={volumeTwo}
+					download
+				>
+					Download PDF
+				</a>
+			</div>
+
 		</article>
 
 		<article class="documentation-card planned-document">
