@@ -34,6 +34,10 @@
 	const volumeTwo = asset(
 		'/documents/rmaTracker/Technical_Design_and_Architecture_Manual_v2.1.1.pdf'
 	);
+
+	const volumeThree = asset(
+		'/documents/rmaTracker/User_Manual_and_Administgration_Guide_v2.1.1.pdf'
+	);
 </script>
 
 <svelte:head>
@@ -204,7 +208,7 @@
 	</p>
 
 	<div class="documentation-grid">
-		<article class="documentation-card">
+		<article class="documentation-card featured-document">
 			<div class="document-heading">
 				<span class="document-volume">Overview</span>
 				<span class="document-status available">Available</span>
@@ -322,10 +326,10 @@
 
 		</article>
 
-		<article class="documentation-card planned-document">
+		<article class="documentation-card featured-document">
 			<div class="document-heading">
 				<span class="document-volume">Volume III</span>
-				<span class="document-status">Planned</span>
+				<span class="document-status available">Available</span>
 			</div>
 
 			<h3>User Manual & Administration Guide</h3>
@@ -335,6 +339,25 @@
 				RMAs, managing repair items, searching, reporting, exporting,
 				backing up, restoring, and troubleshooting.
 			</p>
+
+			<div class="document-actions">
+				<a
+					class="primary-button"
+					href={volumeThree}
+					target="_blank"
+					rel="noreferrer"
+				>
+					View PDF
+				</a>
+
+				<a
+					class="secondary-button"
+					href={volumeThree}
+					download
+				>
+					Download PDF
+				</a>
+			</div>
 		</article>
 
 		<article class="documentation-card planned-document">
