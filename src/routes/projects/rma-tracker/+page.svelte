@@ -24,7 +24,7 @@
 	];
 
 	const documentationLibrary = asset(
-		'/documents/rmaTracker/RMA_Tracker_Documentation_Outline_Volumes_I-IV.pdf'
+		'/documents/rmaTracker/RMA_Tracker_Documentation_Library_Master_Outline_v2.1.1.pdf'
 	);
 
 	const volumeOne = asset(
