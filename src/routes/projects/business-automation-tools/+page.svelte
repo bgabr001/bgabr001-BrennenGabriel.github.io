@@ -192,18 +192,20 @@
 	</div>
 </section>
 
-{#each tools as tool}
+{#each tools as tool (tool.number)}
 	<section class="section tool-section">
 		<div class="page-shell">
 			<article class="tool-detail">
 				<div class="tool-heading">
 					<span class="project-number">{tool.number}</span>
+
 					<div>
 						<div class="project-meta">
-							{#each tool.technologies as technology}
+							{#each tool.technologies as technology (technology)}
 								<span>{technology}</span>
 							{/each}
 						</div>
+
 						<h2>{tool.title}</h2>
 						<p class="tool-description">{tool.summary}</p>
 
@@ -211,7 +213,7 @@
 							<a
 								href={tool.github}
 								target="_blank"
-								rel="noreferrer"
+								rel="external noreferrer"
 								class="github-link"
 								aria-label={`View the ${tool.title} source code on GitHub`}
 							>
@@ -225,15 +227,17 @@
 				<div class="detail-grid">
 					<section class="detail-panel">
 						<p class="panel-label">Purpose and Business Problem</p>
-						{#each tool.problem as paragraph}
+
+						{#each tool.problem as paragraph (paragraph)}
 							<p>{paragraph}</p>
 						{/each}
 					</section>
 
 					<section class="detail-panel">
 						<p class="panel-label">How the Application Works</p>
+
 						<ol class="process-list">
-							{#each tool.workflow as step}
+							{#each tool.workflow as step (step)}
 								<li>{step}</li>
 							{/each}
 						</ol>
@@ -241,8 +245,9 @@
 
 					<section class="detail-panel full-width">
 						<p class="panel-label">Technical Implementation</p>
+
 						<div class="implementation-grid">
-							{#each tool.implementation as item}
+							{#each tool.implementation as item (item)}
 								<p>{item}</p>
 							{/each}
 						</div>
@@ -252,8 +257,9 @@
 				<div class="tool-lower-grid">
 					<div>
 						<h3>Key Features</h3>
+
 						<ul class="feature-list">
-							{#each tool.features as feature}
+							{#each tool.features as feature (feature)}
 								<li>{feature}</li>
 							{/each}
 						</ul>
@@ -270,7 +276,9 @@
 						<span>Input</span>
 						<p>{tool.input}</p>
 					</div>
+
 					<div class="workflow-arrow" aria-hidden="true">→</div>
+
 					<div class="workflow-card">
 						<span>Output</span>
 						<p>{tool.output}</p>
