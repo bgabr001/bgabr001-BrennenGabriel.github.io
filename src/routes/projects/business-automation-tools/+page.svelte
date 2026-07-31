@@ -274,6 +274,7 @@
 					<div class="workflow-card">
 						<span>Output</span>
 						<p>{tool.output}</p>
+					</div>
 				</div>
 			</article>
 		</div>
@@ -377,8 +378,7 @@
 	.summary-card,
 	.workflow-card,
 	.value-card,
-	.detail-panel,
-	.lower-panel {
+	.detail-panel {
 		border: 1px solid rgba(127, 127, 127, 0.25);
 		border-radius: 18px;
 		background: rgba(127, 127, 127, 0.06);
