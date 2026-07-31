@@ -85,6 +85,10 @@
 					</p>
 				</div>
 			</div>
+
+			<a class="text-link" href={resolve('/projects/business-automation-tools')}>
+				View Business Automation Tools →
+			</a>
 		</div>
 	</article>
 
