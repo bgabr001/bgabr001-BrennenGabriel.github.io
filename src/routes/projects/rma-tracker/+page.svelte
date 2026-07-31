@@ -38,6 +38,10 @@
 	const volumeThree = asset(
 		'/documents/rmaTracker/User_Manual_and_Administgration_Guide_v2.1.1.pdf'
 	);
+
+	const volumeFour = asset(
+		'/documents/rmaTracker/Installation_Deployment_Maintenance_Guide_v2.1.1.pdf'
+	);
 </script>
 
 <svelte:head>
@@ -360,10 +364,10 @@
 			</div>
 		</article>
 
-		<article class="documentation-card planned-document">
+		<article class="documentation-card featured-document>">
 			<div class="document-heading">
 				<span class="document-volume">Volume IV</span>
-				<span class="document-status">Planned</span>
+				<span class="document-status available">Available</span>
 			</div>
 
 			<h3>Installation, Deployment & Maintenance Guide</h3>
@@ -373,6 +377,25 @@
 				software updates, backup and recovery, maintenance, and
 				release procedures.
 			</p>
+
+			<div class="document-actions">
+				<a
+					class="primary-button"
+					href={volumeFour}
+					target="_blank"
+					rel="noreferrer"
+				>
+					View PDF
+				</a>
+
+				<a
+					class="secondary-button"
+					href={volumeFour}
+					download
+				>
+					Download PDF
+				</a>
+			</div>
 		</article>
 	</div>
 </section>
